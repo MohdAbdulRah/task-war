@@ -59,6 +59,7 @@ const secretOptions = {
     sameSite: "none"     //  allow cross-site cookie sharing
   }
 };
+app.set("trust proxy", 1);
 app.use(session(secretOptions))
 app.use(flash())
 
